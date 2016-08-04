@@ -1,15 +1,15 @@
 Docker Image for [joeyespo/grip](https://github.com/joeyespo/grip)
 ====
 
-Based on previous work from [yokogawa/grip-export](https://github.com/yokogawa/grip-export), without specifyig any entrypoint, allowing to use grip anyway, straight out of docker.
+Based on previous work from [yokogawa/docker-grip-export](https://github.com/yokogawa/docker-grip-export), without specifyig any entrypoint, allowing to use grip anyway, straight out of docker.
 
 How to use.
 ----
 
-Use it as you would use grip, just prefix the command with ```docker run -it -v ${PWD}:/work/ philou/grip-export```
+Use it as you would use grip, just prefix the command with ```docker run -it -v ${PWD}:/work/ pbourgau/grip-export```
 
 ```console
-$ docker run -it -v ${PWD}:/work/ philou/grip-export grip --help
+$ docker run -it -v ${PWD}:/work/ pbourgau/grip-export grip --help
 Usage:
   grip [options] [<path>] [<address>]
   grip -V | --version
